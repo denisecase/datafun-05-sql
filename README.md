@@ -82,3 +82,27 @@ Run the Python script.
 ```shell
 python3 book_manager.py
 ```
+
+## Optional: Install Packages Using requirements.txt 
+
+If you like, you can use a [requirements.txt](requirements.txt) file for your dependencies.
+This is helpful in projects when we have several external packages to install and it can be good practice.
+
+To do so, first create a file named requirements.txt in the root folder of your repository, and provide the following contents, one package per line (starting in the very left column):
+
+```shell
+pandas
+pyarrow
+```
+
+If using Windows PowerShell, install into your active project virtual environment with this command:
+
+```shell
+py -m pip install -r requirements.txt
+```
+
+If using Mac or Linux, install into your active project virtual environment with this command:
+
+```shell
+python3 -m pip install -r requirements.txt
+```
