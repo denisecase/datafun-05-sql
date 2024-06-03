@@ -6,3 +6,6 @@
 
 # Ignore macOS specific files
 .DS_Store
+
+# If the project uses Jupyter Notebooks include the following
+.ipynb_checkpoints/
