@@ -1,2 +1,134 @@
+# requirements.txt - list all the packages the project needs
+# Ignore hashes (#) - they are just used to create comments.
+# Hashes will be ignored when we install packages using this file. 
+
+# ======================================================
+# STEP A - CREATE A LOCAL PROJECT VIRTUAL ENV (.venv)
+# ======================================================
+
+# Create your local project virtual environment
+# This step ensures you have an isolated Python environment for your project.
+# This is typically just done once at the beginning of a project.
+# If it gets messed up, we can delete .venv and recreate it at any time. 
+
+# Run the following command to create a virtual environment in the project root.
+### On Windows, Use PowerShell (not cmd) - don't include the #:
+# py -m venv .venv
+
+### On Mac/Linux, Use zsh or bash (or PowerShell) - don't include the #:
+# python3 -m venv .venv
+
+### If VS Code asks: We noticed a new environment has been created. 
+# Do you want to select it for the workspace folder?
+# Click Yes. 
+
+# ======================================================
+# STEP B - ALWAYS ACTIVATE THE (.venv) WHEN OPENING A NEW TERMINAL
+# ======================================================
+
+# ALWAYS activate the .venv before working on the project.
+# Activate whenever you open a new terminal. 
+
+### Windows PowerShell Command (don't include the #):
+# .\.venv\Scripts\activate
+
+### Mac/Linux Command (don't include the #):
+# source .venv/bin/activate
+
+# Verify: When active, you can usually see (.venv) in the terminal.
+
+# If using a Jupyter notebook, select the kernel associated with your project (.venv).
+
+# ======================================================
+# STEP C - INSTALL PACKAGES INTO (.venv) AS NEEDED
+# ======================================================
+
+# Install necessary packages listed below with this command:
+# Keep packages updated with the most recent versions.
+
+# When you identify a new package you want to use, 
+# Just update the list below and re-run this command. 
+
+### Windows Commands (don't include the #):
+# py -m pip install --upgrade pip setuptools wheel
+# py -m pip install --upgrade -r requirements.txt
+
+### Mac/Linux Commands (don't include the #):
+# python3 -m pip install --upgrade pip setuptools wheel
+# python3 -m pip install --upgrade -r requirements.txt
+
+# When you identify a new package you want to use, 
+# Just update the list below and re-run the install command. 
+
+# ======================================================
+# Step D: VS CODE- Select Interpreter
+# ======================================================
+# VS Code needs our populated .venv to interpret our files correctly.
+# To set the VS Code Interpreter:
+# 1. Open the Command Palette: Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac).
+# 2. Search for "Python: Select Interpreter":
+# 3. Type Python: Select Interpreter in the Command Palette search bar and select it from the dropdown.
+# 4. Choose an Interpreter - A list of available Python environments will appear.
+#    Look for the local .venv option.
+# 5. Once selected, check the Python version displayed 
+#    in the bottom-left corner of the VS Code window in the status bar.
+
+# ======================================================
+# Step E: If Using Jupyter Notebook - Create and Select Kernel
+# ======================================================
+# 1. Create a kernel from the virtual environment:
+
+### Windows Commands (don't include the #):
+# py -m ipykernel install --user --name .venv --display-name "Python (.venv)"
+
+### Mac/Linux Commands (don't include the #):
+# python3 -m ipykernel install --user --name .venv --display-name "Python (.venv)"
+#
+# 2. Select the kernel for the notebook:
+#   - Open your notebook.
+#   - From the Command Palette, select `Notebook: Select Notebook Kernel`.
+#   - Choose the kernel named `Python (.venv)`.
+
+# ======================================================
+# ESSENTIAL TOOLS
+# ======================================================
+
+# Up-to-date package management tools
+pip
+setuptools
+wheel
+
+# Easy logging for monitoring code execution
+loguru
+
+# Making web requests
+requests
+
+# ======================================================
+# ESSENTIAL TOOLS
+# ======================================================
+# Easy access to modern Excel files (*.xlsx)
+openpyxl
+
+
+# ======================================================
+# SQL DATABASES
+# ======================================================
+
+sqlite3
+
+# ======================================================
+# DATA PROCESSING & ANALYSIS
+# ======================================================
+
+# Fundamental data manipulation and analysis tools
+numpy
 pandas
-pyarrow
+
+# Data visualization libraries
+matplotlib  # the foundation
+seaborn     # built on top of matplotlib
+
+# general-purpose interactivity library
+ipywidgets  
+
