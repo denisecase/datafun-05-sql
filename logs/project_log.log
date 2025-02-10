@@ -1,0 +1,22 @@
+2025-02-10 07:59:08.934 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-10 07:59:08.934 | INFO     | __main__:main:38 - Starting database setup...
+2025-02-10 07:59:08.937 | INFO     | __main__:main:52 - Connected to database: C:\Users\edaci\Documents\datafun-05-sql\data\db.sqlite
+2025-02-10 07:59:08.946 | INFO     | __main__:execute_sql_file:30 - Executed: C:\Users\edaci\Documents\datafun-05-sql\sql_create\01_drop_tables.sql
+2025-02-10 07:59:08.962 | INFO     | __main__:execute_sql_file:30 - Executed: C:\Users\edaci\Documents\datafun-05-sql\sql_create\02_create_tables.sql
+2025-02-10 07:59:08.972 | ERROR    | __main__:execute_sql_file:32 - Failed to execute C:\Users\edaci\Documents\datafun-05-sql\sql_create\03_insert_records.sql: near "s": syntax error
+2025-02-10 07:59:08.973 | ERROR    | __main__:main:62 - Error during database setup: near "s": syntax error
+2025-02-10 07:59:08.973 | INFO     | __main__:main:65 - Database connection closed.
+2025-02-10 08:01:26.105 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-10 08:01:26.105 | INFO     | __main__:main:38 - Starting database setup...
+2025-02-10 08:01:26.106 | INFO     | __main__:main:52 - Connected to database: C:\Users\edaci\Documents\datafun-05-sql\data\db.sqlite
+2025-02-10 08:01:26.114 | INFO     | __main__:execute_sql_file:30 - Executed: C:\Users\edaci\Documents\datafun-05-sql\sql_create\01_drop_tables.sql
+2025-02-10 08:01:26.121 | INFO     | __main__:execute_sql_file:30 - Executed: C:\Users\edaci\Documents\datafun-05-sql\sql_create\02_create_tables.sql
+2025-02-10 08:01:26.136 | INFO     | __main__:execute_sql_file:30 - Executed: C:\Users\edaci\Documents\datafun-05-sql\sql_create\03_insert_records.sql
+2025-02-10 08:01:26.136 | INFO     | __main__:main:60 - Database setup completed successfully.
+2025-02-10 08:01:26.136 | INFO     | __main__:main:65 - Database connection closed.
+2025-02-10 08:02:13.187 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-10 08:02:13.188 | INFO     | __main__:main:36 - Starting feature queries execution...
+2025-02-10 08:02:13.189 | INFO     | __main__:main:52 - Connected to database: C:\Users\edaci\Documents\datafun-05-sql\data\db.sqlite
+2025-02-10 08:02:13.203 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Users\edaci\Documents\datafun-05-sql\sql_features\01_new_column_pub_age.sql
+2025-02-10 08:02:13.203 | INFO     | __main__:main:58 - Feature queries execution completed successfully.
+2025-02-10 08:02:13.203 | INFO     | __main__:main:63 - Database connection closed.
